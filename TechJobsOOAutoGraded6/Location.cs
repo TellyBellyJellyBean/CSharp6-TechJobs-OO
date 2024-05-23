@@ -1,5 +1,5 @@
 ﻿using System;
-namespace TechJobsOOAutoGraded6
+namespace TechJobsOOAutoGraded6 
 {
 	public class Location
 	{
@@ -11,6 +11,11 @@ namespace TechJobsOOAutoGraded6
         {
             Id = nextId;
             nextId++;
+        }
+
+        public Location(string value) : this()
+        {
+            Value = value;
         }
 
         // TODO: Task 2: Add a second constructor to this class that uses the Location() constructor and sets the value of the value field.

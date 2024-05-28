@@ -9,8 +9,8 @@ namespace TechJobsOOAutoGraded6
 
         public Location()
         {
+            nextId++; //move below Id = nextId later on, just in case this breaks anything.
             Id = nextId;
-            nextId++;
         }
 
         public Location(string value) : this()

@@ -54,7 +54,69 @@ namespace TechJobsOOAutoGraded6
 
             public override string ToString()
             {
-                return Environment.NewLine + $"PUT JOB DATA HERE" + Environment.NewLine;
+                string nl = Environment.NewLine;
+                string dataNotAvailable = "Data not available";
+                
+                // if (Name == "")
+                // {
+                //     Console.WriteLine(dataNotAvailable);
+                // }
+                // if (EmployerName.Value == "")
+                // {
+                //     Console.WriteLine(dataNotAvailable);
+
+                // }
+                // if (EmployerLocation.Value == "")
+                // {
+                //     Console.WriteLine(dataNotAvailable);
+
+                // }
+                // if (JobType.Value == "")
+                // {
+                //     Console.WriteLine(dataNotAvailable);
+
+                // }
+                // if (JobCoreCompetency.Value == "")
+                // {
+                //     Console.WriteLine(dataNotAvailable);
+
+                // }
+                if (Name == "")
+                {
+                    Name = "Data not available";
+                }
+                if (EmployerName.Value == "")
+                {
+                    EmployerName.Value = "Data not available";
+                }
+                if (EmployerLocation.Value == "")
+                {
+                    EmployerLocation.Value = "Data not available";
+                }
+                if (JobType.Value == "")
+                {
+                    JobType.Value = "Data not available";
+                }
+                if (JobCoreCompetency.Value == "")
+                {
+                    JobCoreCompetency.Value = "Data not available";
+                }
+                
+                
+                return 
+                Environment.NewLine + 
+                $"ID: {Id}" +
+                nl +
+                $"Name: {Name}" +
+                nl +
+                $"Employer: {EmployerName.Value}" +
+                nl +
+                $"Location: {EmployerLocation.Value}" +
+                nl +
+                $"Position Type: {JobType.Value}" +
+                nl +
+                $"Core Competency: {JobCoreCompetency.Value}" +
+                Environment.NewLine;
             }
         //Until you create this method, you will not be able to print a job to the console.
 

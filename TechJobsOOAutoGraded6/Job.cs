@@ -98,7 +98,7 @@ namespace TechJobsOOAutoGraded6
                     JobType.Value = "Data not available";
                 }
                 if (JobCoreCompetency.Value == "")
-                {
+                { 
                     JobCoreCompetency.Value = "Data not available";
                 }
                 
